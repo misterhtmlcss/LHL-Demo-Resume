@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
+  <meta name="description" content="This is my demo resume for the students!">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -16,11 +18,13 @@
       </ul>
     </nav>
     <!-- Identity -->
-    <h1>Roger Kondrat</h1>
-    <h2>Software Developer</h2>
+    <div class="me">
+      <h1>Roger Kondrat</h1>
+      <h2>Software Developer</h2>
+    </div>
   </header>
   <!-- Contact details -->
-  <section>
+  <section class="contact-details">
     <ul>
       <li>Email: Bob@shawnofthedead.ca</li>
       <li>Phone: (+1-)403-333-3333</li>
@@ -28,60 +32,104 @@
     </ul>
   </section>
   <!-- Skills -->
-  <table>
-    <tr>
-      <th>Languages</th>
-      <th>Frameworks</th>
-      <th>Tools</th>
-      <th>Other</th>
-    </tr>
-    <tr>
-      <td>JavaScript</td>
-      <td>HTML/CSS</td>
-      <td>Python/SQL</td>
-    </tr>
-    <tr>
-      <td>React</td>
-      <td>jQuery</td>
-      <td>Vuejs</td>
-    </tr>
-    <tr>
-      <td>Postman</td>
-      <td>Docker</td>
-      <td>Git</td>
-    </tr>
-    <tr>
-      <td>MongoDB/Atlas</td>
-      <td>AWS</td>
-      <td>Heroku</td>
-    </tr>
-  </table>
+  <section class="skills">
+    <table>
+      <thead>
+        <tr>
+          <th>Languages</th>
+          <th>Frameworks</th>
+          <th>Tools</th>
+          <th>Other</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>JavaScript</td>
+        <td>React</td>
+        <td>Docker</td>
+        <td>AWS</td>
+      </tr>
+      <tr>
+        <td>Python/SQL</td>
+        <td>jQuery</td>
+        <td>Git</td>
+        <td>MongoDB/Atlas</td>
+      </tr>
+      <tr>
+        <td>SQL</td>
+        <td>Vuejs</td>
+        <td>Postman</td>
+        <td>Heroku</td>
+      </tr>
+    </table>
+  </section>
   <!-- Job History -->
   <section class="job-history">
     <h2 class="job-history-title">Job  History</h2>
     <article class="job-title">
-
       <h3>Programmer 1</h3>
       <h3>August 2019- August 2020</h3>
-
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga assumenda ducimus quos. Ea cupiditate ab illo eum voluptas animi illum pariatur beatae odio obcaecati numquam, architecto voluptatibus, sit est quod?</p>
     </article>
     <article class="job-title">
       <h3>Programmer 2</h3>
       <h3>August 2019- August 2020</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga assumenda ducimus quos. Ea cupiditate ab illo eum voluptas animi illum pariatur beatae odio obcaecati numquam, architecto voluptatibus, sit est quod?</p>
     </article>
     <article class="job-title">
       <h3>Programmer 3</h3>
       <h3>August 2019- August 2020</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga assumenda ducimus quos. Ea cupiditate ab illo eum voluptas animi illum pariatur beatae odio obcaecati numquam, architecto voluptatibus, sit est quod?</p>
     </article>
-
-
   </section>
-
   <!-- Projects -->
-  <!-- Volunteering -->
+  <section class="projects-history">
+    <h2>Projects</h2>
+    <article class="project">
+      <h3>Project Title</h3>
+      <h4>Github: Link.....</h4>
+      <p>One liner summary statementOne liner summary statementOne liner summary statement</p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+      </ul>
+    </article>
+    <article class="project">
+      <h3>Project Title</h3>
+      <h4>Github: Link.....</h4>
+      <p>One liner summary statementOne liner summary statementOne liner summary statement</p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+      </ul>
+    </article>
+    <article class="project">
+      <h3>Project Title</h3>
+      <h4>Github: Link.....</h4>
+      <p>One liner summary statementOne liner summary statementOne liner summary statement</p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+      </ul>
+    </article>
+  </section>
   <!-- Social Proof -->
-
-
-
+  <section class="social-proof">
+    <article class="recommendation">
+      <h3 class="person-details">Bob Sugar: Sugarland Casion Royale</h3> <!-- Movie Reference -->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga assumenda ducimus quos. Ea cupiditate ab illo eum voluptas Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga assumenda ducimus quos. Ea cupiditate ab illo eum voluptas</p>
+    </article>
+    <article class="recommendation">
+      <h3 class="person-details">Jeff Eagle: Eagle Winter Wonderland</h3> <!-- Movie Reference -->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga assumenda ducimus quos. Ea cupiditate ab illo eum voluptas Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga assumenda ducimus quos. Ea cupiditate ab illo eum voluptas</p>
+    </article>
+    <article class="recommendation">
+      <h3 class="person-details">Hafiz Quimper: Programming Genius Squad</h3> <!-- Movie Reference -->
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga assumenda ducimus quos. Ea cupiditate ab illo eum voluptas Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga assumenda ducimus quos. Ea cupiditate ab illo eum voluptas</p>
+    </article>
+  </section>
+  <script src="app.js"></script>
 </body>
 </html>
