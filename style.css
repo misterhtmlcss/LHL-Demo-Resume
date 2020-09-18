@@ -1,0 +1,84 @@
+/* Resets */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile first styling */
+
+body {
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+
+header > .me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.me h1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav ul, .contact-details ul {
+  list-style: none;
+}
+
+nav ul {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skills {
+  width: 100%;
+}
+
+table {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+td {
+  text-align: center;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row-reverse;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+ }
