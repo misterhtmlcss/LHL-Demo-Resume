@@ -6,8 +6,10 @@
 }
 
 /* Mobile first styling */
-
 body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 16px;
   padding: 30px;
 }
 
@@ -24,7 +26,6 @@ nav {
   justify-content: center;
 }
 
-
 header > .me {
   display: flex;
   flex-direction: column;
@@ -38,41 +39,48 @@ header > .me {
   justify-content: flex-start;
 }
 
-nav ul, .contact-details ul {
+/* Navigation and Skills Table */
+nav ul, .contact-details ul, .skills div ul {
   list-style: none;
 }
 
 nav ul {
-  width: 200px;
+  width: auto;
   display: flex;
   justify-content: space-evenly;
 }
 
-.skills {
-  width: 100%;
+nav ul li {
+  padding: 0 15px;
 }
 
-table {
-  margin: 20px;
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.skills div {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
-tr {
-  display: flex;
-  justify-content: space-between;
+.skills div ul li {
+  width: 120px;
 }
 
-td {
-  text-align: center;
+section:nth-of-type(even), header {
+  background: lightblue;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 
 
-
-
-
-
+/* Larger format screens */
 @media screen and (min-width: 768px) {
   header {
     flex-direction: row-reverse;
@@ -81,4 +89,15 @@ td {
     display: flex;
     justify-content: flex-end;
   }
- }
+  .skills {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Largest format screen */
+@media screen and (min-width: 1200px){
+  nav {
+    font-size: 1.6em;
+  }
+}
